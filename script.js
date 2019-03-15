@@ -21,14 +21,14 @@ var Counter = React.createClass({
     },
 
     // componentWillMount: function() {
-    //     console.log('componentWillMount');
+    //     console.log('componentWillMount - metoda wywoływana przed pierwszym renderowaniem');
     // },
 
     // componentWillReceiveProps: function() {
     //     console.log('componentWillReceiveProps');
     // },
     // shouldComponentUpdate: function() {
-    //     console.log('shouldComponentUpdate');
+    //     console.log('jeśli metoda zwróci false, to nie dochodzi do ponownego renderowania');
     // },
     // componentWillUpdate: function() {
     //     console.log('componentWillUpdate');
