@@ -1,4 +1,8 @@
 var Counter = React.createClass({
+    // getDefaultProps: function() {
+    //     console.log('getDefaultProps');
+    // },
+
     getInitialState: function() {
         return {
             counter: 0
@@ -16,13 +20,36 @@ var Counter = React.createClass({
         });
     },
 
+    // componentWillMount: function() {
+    //     console.log('componentWillMount');
+    // },
+
+    // componentWillReceiveProps: function() {
+    //     console.log('componentWillReceiveProps');
+    // },
+    // shouldComponentUpdate: function() {
+    //     console.log('shouldComponentUpdate');
+    // },
+    // componentWillUpdate: function() {
+    //     console.log('componentWillUpdate');
+    // },
+
     render: function() {
         return React.createElement('div', {},
             React.createElement('span', {}, 'Licznik: ' + this.state.counter),
             React.createElement('button', {className: 'plus', onClick: this.increment}, '+'),
             React.createElement('button', {className: 'minus', onClick: this.decrement}, '-'),
         );
-    }
+    },
+    // componentDidMount: function() {
+    //     console.log('componentDidMount - możemy w tym miejscu np. wysłać zapytanie do serwera i pobrać dane');
+    // },
+    // componentDidUpdate: function() {
+    //     console.log('componentDidUpdate');
+    // },
+    // componentWillUnmount: function() {
+    //     console.log('componentWillUnmount');
+    // }
 });
 
 var Counters = React.createClass({
