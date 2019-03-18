@@ -55,10 +55,10 @@ var Counter = React.createClass({
 var Counters = React.createClass({
     render : function() {
         return React.createElement('div', {}, 
-                React.createElement(Counter, {className: 'counter1'}),
-                React.createElement(Counter, {className: 'counter2'}),
-                React.createElement(Counter, {className: 'counter3'})
-            )
+            React.createElement(Counter, {className: 'counter1'}),
+            React.createElement(Counter, {className: 'counter2'}),
+            React.createElement(Counter, {className: 'counter3'})
+        )
     }
 })
 var element = React.createElement(Counters);
